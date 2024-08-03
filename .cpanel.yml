@@ -2,8 +2,3 @@
 deployment:
   tasks:
     - export DEPLOYMENT_TARGET=/home/flik/public_html/flikserver
-    - cp -R . $DEPLOYMENT_TARGET
-    - cd $DEPLOYMENT_TARGET
-    - npm install
-    - npm run start
-    - pm2 restart all
