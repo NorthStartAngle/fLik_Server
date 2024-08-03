@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYMENT_TARGET=/home/flikportal/public_html/flikserver
+    - /bin/cp -R . $DEPLOYMENT_TARGET
+    - cd $DEPLOYMENT_TARGET
+    - /usr/local/bin/npm install
+    - /usr/local/bin/node app.js
+    - /usr/local/bin/pm2 restart all
