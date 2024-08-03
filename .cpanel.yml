@@ -4,6 +4,6 @@ deployment:
     - export DEPLOYMENT_TARGET=/home/flik/public_html/flikserver
     - /bin/cp -R . $DEPLOYMENT_TARGET
     - cd $DEPLOYMENT_TARGET
-    - /usr/local/bin/npm install
-    - /usr/local/bin/npm run start
-    - /usr/local/bin/pm2 restart all
+    - /usr/lib/node_modules/npm install
+    - /usr/lib/node_modules/npm run start
+    - /usr/lib/node_modules/pm2 restart all
