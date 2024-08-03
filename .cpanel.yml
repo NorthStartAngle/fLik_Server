@@ -1,4 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYMENT_TARGET=/home/flik/public_html/flikserver
+    - export DEPLOYMENT_TARGET=/home/flik/public_html/flikserver/
+    - /bin/cp app.js $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
