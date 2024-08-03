@@ -5,5 +5,5 @@ deployment:
     - /bin/cp -R . $DEPLOYMENT_TARGET
     - cd $DEPLOYMENT_TARGET
     - /usr/local/bin/npm install
-    - /usr/local/bin/node app.js
+    - /usr/local/bin/npm run start
     - /usr/local/bin/pm2 restart all
